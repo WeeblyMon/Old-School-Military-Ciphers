@@ -17,10 +17,12 @@ function decodeCaesarCipher(text) {
         }
     }
 
-    if (bestCount > 1) { // You can adjust this threshold
+    if (bestCount > 1) {
+        document.getElementById('cipherType').innerText = "Detected Cipher: Caesar Cipher";
         return bestDecodedText;
     } else {
-        return "No cipher detected.";
+        document.getElementById('cipherType').innerText = "No cipher detected.";
+        return "Please enter a valid encoded message.";
     }
 }
 
@@ -46,7 +48,7 @@ function countCommonWords(text) {
 
 // Event listener for when input changes
 document.getElementById('cipherText').addEventListener('input', function() {
-    const encodedMessage = this.value.toUpperCase(); // Assuming case-insensitive detection
+    const encodedMessage = this.value.toUpperCase();
     const decoded = decodeCaesarCipher(encodedMessage);
     document.getElementById('decodedMessage').innerText = decoded;
 });
