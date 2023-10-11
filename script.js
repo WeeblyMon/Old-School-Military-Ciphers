@@ -1,5 +1,15 @@
 // A simple list of common English words
-const commonWords = ["THE", "AND", "FOR", "ARE", "BUT", "NOT", "YOU", "ALL", "ANY", "HER", "HIS", "OUT", "USE", "THERE"];
+const commonWords = [
+    "THE", "AND", "FOR", "ARE", "BUT", "NOT", "YOU", "ALL", "ANY", "HER", 
+    "HIS", "OUT", "USE", "THERE", "WITH", "CAN", "SHE", "WAS", "MY", "HE",
+    "WE", "THIS", "HAVE", "FROM", "BY", "THEY", "BE", "OR", "AS", "WHAT",
+    "WHICH", "AT", "ON", "YOUR", "AN", "THAT", "IT", "OF", "ONE", "TWO",
+    "IN", "TO", "IS", "WAS", "HIM", "WITH", "BE", "AT", "YOU", "AND", 
+    "A", "I", "IN", "WAS", "HE", "THAT", "IT", "HIS", "HER", "YOU", 
+    "AS", "HAD", "WITH", "FOR", "SHE", "NOT", "AT", "BUT", "BE", 
+    "MY", "ON", "HAVE", "HIM", "IS", "SAID", "ME", "WHICH"
+];
+
 
 function decodeCaesarCipher(text) {
     let bestShift = -1;
