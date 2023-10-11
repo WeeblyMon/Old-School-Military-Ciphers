@@ -21,3 +21,6 @@ h1 {
     margin-left: 20px;
 }
 
+a:hover {
+    opacity: 0.7;
+}
