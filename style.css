@@ -1,16 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
 header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
-    border: 2px solid #000;
     background-color: #f8f8f8;
-    width: 80%;
-    margin: auto;
-
 }
 
 h1 {
-    margin-right: 20px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
 }
+
+.links {
+    margin-left: 20px;
+}
+
